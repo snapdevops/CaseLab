@@ -5,7 +5,7 @@ pipeline {
             steps {
                 // Create a dummy file in the repo
                 //sh('echo \$BUILD_NUMBER > example-\$BUILD_NUMBER.md')
-		//  sh 'git 'https://github.com/snapdevops/CaseStudy5.git'
+		//  sh 'git 'https://github.com/snapdevops/CaseLab.git'
                 // Run Maven on a Unix agent.
                   sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
